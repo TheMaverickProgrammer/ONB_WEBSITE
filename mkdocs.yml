@@ -1,0 +1,58 @@
+site_name: Open Net Battle
+plugins:
+  - search
+  - git-revision-date
+  - spellcheck:
+      backends: 
+      - symspellpy
+
+      ignore_code: yes
+      min_length: 2
+      allow_unicode: yes
+  - git-revision-date-localized
+  - glightbox
+
+markdown_extensions:
+    - attr_list
+    - toc:
+        baselevel: "3"
+        toc_depth: "3"
+        permalink: "#"
+    - pymdownx.superfences
+    - pymdownx.details
+    - pymdownx.highlight:
+        use_pygments: true
+        pygments_style: github-dark
+        noclasses: true
+    - pymdownx.inlinehilite
+    - admonition
+    - neoteroi.cards
+    - footnotes
+  
+theme:
+  name: terminal
+  custom_dir: overrides
+  palette: dark
+  features:
+    - footer.prev_next
+    - revion.date
+
+extra_css:
+  - "assets/css/custom.css"
+  - "assets/css/neoteroi-mkdocs.css"
+
+repo_url: https://github.com/OpenNetBattle/Client
+site_description: Home and news for the first open net battle online experience.
+site_author: TheMaverickProgrammer
+
+nav:
+  - GET: 'index.md'
+  - FAQ: 'faq.md'
+  - RES: 'resources.md'
+  - WHO: 'credits.md'
+  - LOG: 
+    - 2.1: 'changelogs/two_point_one.md'
+    - 2.5: 'changelogs/two_point_five.md'
+
+extra:
+  generator: false

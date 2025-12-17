@@ -1,0 +1,253 @@
+.admonition {
+    border-color: rgb(230, 230, 230);
+    border-style: double;
+    border-width: 0.3em;
+    padding: 1em;
+    margin-block-end: 2em;
+    box-shadow: 5px 5px 0px 1px grey;
+    background-color: rgb(0, 0, 78);
+}
+
+p.admonition-title {
+    color: black;
+    background-color: rgb(230, 230, 230);
+    font-weight: bold;
+    width: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/**nav respect small device availability**/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    nav.terminal-menu {
+        visibility: hidden;
+    }
+}
+
+
+/** needed to center embedded images **/
+li img {
+    padding-left: 25%;
+    padding-right: 25%;
+    width: 100%;
+}
+
+li::has(p) {
+    margin: 0 !important;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+ol li::before {
+    content: counters(item, ".") ".";
+    counter-increment: item;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-right: 1em;
+}
+
+ol ol li::before {
+    content: counters(item, ".") "." !important;
+    counter-increment: item !important;
+}
+
+/*ol:has(li) {
+    padding-bottom: 1em;
+}*/
+
+pre {
+    border: none !important;
+}
+
+pre code {
+    overflow-x: auto !important;
+    padding: 1em;
+}
+
+/** This MkDocs theme starts headers with h3 **/
+h3 {
+    background: linear-gradient(grey, black);
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+h5 {
+    text-decoration: underline dotted;
+    background-color: black;
+}
+
+h6 {
+    text-decoration: underline dotted;
+    color: rgb(180, 180, 180);
+}
+
+/** Table Elements **/
+table * {
+    border-style: hidden !important;
+}
+
+td {
+    color: rgb(180, 180, 180);
+}
+
+td p {
+    margin: 0 !important;
+}
+
+/** Embeded video hotfix **/
+p:has(iframe) {
+    text-align: center;
+}
+
+/** Blockquote color **/
+blockquote p {
+    color: darkcyan;
+    font-style: italic;
+}
+
+/** Close button **/
+button.close.btn {
+    color: #bde9fd;
+    background-color: #ff297b;
+    border-color: rgb(230, 230, 230);
+    border-style: double;
+    padding: 1em;
+    font-weight: bold;
+    margin-block-end: 2em;
+    box-shadow: 5px 5px 0px 1px grey;
+}
+
+button.close.btn:hover {
+    color: white;
+    background-color: black;
+}
+
+/** Modal **/
+div.modal-content {
+    border-color: rgb(230, 230, 230);
+    border-style: double;
+    border-width: 0.3em;
+    padding: 1em;
+    box-shadow: 5px 5px 0px 1px grey;
+    background-color: rgb(0, 0, 78);
+}
+
+/** Custom admonition colors **/
+div.admonition.tip p.admonition-title {
+    background-color: rgb(131, 241, 255);
+    color: rgb(110, 0, 104);
+}
+
+div.admonition.note p.admonition-title {
+    background-color: rgb(214, 248, 89);
+    color: rgb(0, 0, 78)
+}
+
+div.admonition.caution p.admonition-title {
+    background-color: #ff297b;
+    color: #bde9fd;
+}
+
+/** Admonition on hover **/
+p.admonition-title:hover {
+    color: white !important;
+    background: black !important;
+}
+
+/** Media Gallery Grid **/
+.mg-grid {
+    padding-bottom: 2em;
+}
+
+/** Hidden special fx **/
+span.hidden {
+    position: relative;
+    text-transform: uppercase;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #f75ae9);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 1s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+.team_name {
+    color: rgb(180, 180, 180);
+}
+
+.team_name:hover {
+    color: black;
+    background-color: white;
+}
+
+.team_name:before {
+    content: "Team";
+}
+
+.team_name::after {
+    content: " Frame Skip";
+    animation: cycle 5s infinite linear;
+}
+
+/** Color cycle special fx **/
+@keyframes cycle {
+    12.5% {
+        color: #FF0000;
+    }
+
+    25% {
+        color: #FFA500;
+    }
+
+    37.5% {
+        color: #FFFF00;
+    }
+
+    50% {
+        color: #7FFF00;
+    }
+
+    62.5% {
+        color: #00FFFF;
+    }
+
+    75% {
+        color: #0000FF;
+    }
+
+    87.5% {
+        color: #9932CC;
+    }
+
+    100% {
+        color: #FF1493;
+    }
+}
+
+ul.cinema {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+ul.cinema>li::after {
+    content: none;
+}
