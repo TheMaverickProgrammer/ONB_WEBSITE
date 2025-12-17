@@ -1,0 +1,1003 @@
+<!DOCTYPE html><html lang="en"><head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+    
+    <meta name="description" content="Home and news for the first open net battle online experience."> 
+    
+    <meta name="author" content="TheMaverickProgrammer"> 
+    <link rel="icon" type="image/png" sizes="192x192" href="../../img/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="../../img/android-chrome-512x512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png">
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../img/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+
+
+    
+ 
+<title>2.5 - Open Net Battle</title>
+
+
+<link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../css/normalize.css" rel="stylesheet">
+<link href="../../css/terminal.css" rel="stylesheet">
+<link href="../../css/theme.css" rel="stylesheet">
+<link href="../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../css/theme.footer.css" rel="stylesheet">
+<!-- dark color palette -->
+<link href="../../css/palettes/dark.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+    
+    <link href="../../assets/css/custom.css" rel="stylesheet"> 
+    <link href="../../assets/css/neoteroi-mkdocs.css" rel="stylesheet">  
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../..",
+    shortcuts = "{}";
+</script>
+<script src="../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../search/main.js"></script>
+    
+
+    
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+        </style></head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Open Net Battle</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../.." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">GET</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../../faq/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">FAQ</span>
+                    </a>
+                    <meta property="position" content="1">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../../resources/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">RES</span>
+                    </a>
+                    <meta property="position" content="2">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../../credits/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">WHO</span>
+                    </a>
+                    <meta property="position" content="3">
+                </li>
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="4">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../..">GET</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../faq/">FAQ</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../resources/">RES</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../credits/">WHO</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">LOG</span>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../two_point_one/">2.1</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">2.5</span>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#25-changelog">2.5 CHANGELOG</a></li>
+        
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+    
+    
+    
+    
+    
+
+<section id="mkdocs-terminal-content">
+    <h3 id="25-changelog"><code>2.5</code> CHANGELOG<a class="headerlink" href="#25-changelog" title="Permanent link">#</a></h3>
+<p>There were many sleepless nights, long weekends, and multiple refactors of the ONB engine from version <code>2.0</code>. Huge thanks to team-member, Rune, for documenting the incremental changelogs during development
+so that we can present them here.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a living document. Expect more changes to be added over time until <code>2.5</code> is released.</p>
+</div>
+<p>Efforts were made to preserve many of the scriptable API behavior while improving what was already available. Fixing some bugs revealed new issues and etc. Finally, the changelog reveals what has changed from the last public release to the grand <code>2.5</code> version of ONB.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The items marked <span class="hidden">SECRET</span> are supposed to be surprises and as such will not be mentioned in any form of publicity even after a short time
+after the release of <code>2.5</code> in order to maximize fun for everyone.</p>
+</div>
+<ol>
+<li>Fixed missing local session code saving/restoring prog blocks.<ol>
+<li>Fixed a logic issue in navi cust scene when inserting blocks into the grid.</li>
+</ol>
+</li>
+<li>Fixed crash while changing forms in the middle of a chip.<ol>
+<li>Old code revealed animations were updating during draw and this queued graphics to be drawn which were later deleted when the transformation completed on a given frame.</li>
+</ol>
+</li>
+<li>Dark card effect properly dimming everything but mob health and card art.</li>
+<li>Added default draw bits to card attachments and player form attachments.<ol>
+<li>This required bumping all layer codes by 1 to support an <em>unset</em> state.</li>
+</ol>
+</li>
+<li>Fixed many more issues with player sessions and folders which resulted in a partial rewrite. The sessions now switch between local and server without overwriting or affecting eachother.</li>
+<li>Chip pool is also respected. Moving chips out of your pool will reduce the pool and these changes are tracked for that session.</li>
+<li>Server mode settings: A) World B) Game<ol>
+<li>Game mode can have a title screen and splash<ol>
+<li>MiniGameFramework (MGFW) started.</li>
+</ol>
+</li>
+<li>All servers should be able to provide an optional loading screen<ol>
+<li>So people aren't just staring at a black loading screen<ol>
+<li>A temp "solution" is in atm but MGFW would be more robust.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>In Folder Edit: the <code>/</code> character is incorrect. e.g. <code>10930</code> instead of <code>10/30</code>.</li>
+<li>Animated navi previews<ol>
+<li>Introduced <code>@node</code> attribute for ONB and boomsheets<ol>
+<li>Users can use nodes for eyes and multiple independant parts.</li>
+<li>Limited supported scenes only (at the moment)<ol>
+<li>mugshots</li>
+<li>navi preview</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Renamed <code>SyncNodeHandle</code> to <code>SpriteGraph</code>.</li>
+<li>We can support multiple nodes for the same animation.</li>
+<li>There needs to be two types of ways to initialize a "SyncNode":<ol>
+<li><code>create_sync_node(point)</code> 1. references the SAME animation as the entity. No copies.</li>
+<li><code>create_sync_node_new_anim(point, anim)</code> 1. Provides a node its own animation file.<ol>
+<li>This is ideal for sync nodes using completely different animations than the entity to which it is bound.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Bugfix: <code>cust_gauge_max_time</code> returns the default ma1. time if a custom ma1. time has not yet been provided.</li>
+<li>Patch lua <code>print</code> to support variadic args.</li>
+<li>Bugfix: <code>CardAction.on_action_end_func</code> did not run in time freeze. </li>
+<li>
+<p>Added a new lua API for <code>HitProps</code>.</p>
+<p>The old code will still work. The new API will look like this:</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code><span style="color: #FF7B72">local</span><span style="color: #6E7681"> </span><span style="color: #79C0FF">props</span><span style="color: #6E7681"> </span><span style="color: #FF7B72; font-weight: bold">=</span><span style="color: #6E7681"> </span><span style="color: #79C0FF">HitProps</span><span style="color: #E6EDF3">.</span><span style="color: #D2A8FF; font-weight: bold">new</span><span style="color: #E6EDF3">(</span><span style="color: #79C0FF">user</span><span style="color: #E6EDF3">:</span><span style="color: #D2A8FF; font-weight: bold">get_context</span><span style="color: #E6EDF3">())</span>
+</code></pre></div>
+<p>Or created manually:</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code><span style="color: #79C0FF">HitProps</span><span style="color: #E6EDF3">.</span><span style="color: #D2A8FF; font-weight: bold">new</span><span style="color: #E6EDF3">()</span>
+<span style="color: #79C0FF">props</span><span style="color: #E6EDF3">:</span><span style="color: #D2A8FF; font-weight: bold">with_flags</span><span style="color: #E6EDF3">(</span><span style="color: #79C0FF">Hit</span><span style="color: #E6EDF3">.</span><span style="color: #79C0FF">Confuse</span><span style="color: #6E7681"> </span><span style="color: #FF7B72; font-weight: bold">|</span><span style="color: #6E7681"> </span><span style="color: #79C0FF">Hit</span><span style="color: #E6EDF3">.</span><span style="color: #79C0FF">PierceInvis</span><span style="color: #6E7681"> </span><span style="color: #FF7B72; font-weight: bold">|</span><span style="color: #6E7681"> </span><span style="color: #79C0FF">Hit</span><span style="color: #E6EDF3">.</span><span style="color: #6E7681">   </span><span style="color: #79C0FF">PierceGuard</span><span style="color: #6E7681"> </span><span style="color: #FF7B72; font-weight: bold">|</span><span style="color: #6E7681"> </span><span style="color: #79C0FF">Hit</span><span style="color: #E6EDF3">.</span><span style="color: #79C0FF">PierceGround</span><span style="color: #E6EDF3">):</span><span style="color: #D2A8FF; font-weight: bold">cooldown</span><span style="color: #E6EDF3">(</span><span style="color: #D2A8FF; font-weight: bold">frames</span><span style="color: #E6EDF3">(</span><span style="color: #A5D6FF">2</span><span style="color: #E6EDF3">))</span>
+<span style="color: #79C0FF">confuse_atk</span><span style="color: #E6EDF3">:</span><span style="color: #D2A8FF; font-weight: bold">set_hit_props</span><span style="color: #E6EDF3">(</span><span style="color: #79C0FF">props</span><span style="color: #E6EDF3">)</span>
+</code></pre></div>
+<p>You can also chain off of <code>HitProps.new()</code></p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code><span style="color: #FF7B72">local</span><span style="color: #6E7681"> </span><span style="color: #79C0FF">props</span><span style="color: #6E7681"> </span><span style="color: #FF7B72; font-weight: bold">=</span><span style="color: #6E7681"> </span><span style="color: #79C0FF">HitProps</span><span style="color: #E6EDF3">.</span><span style="color: #D2A8FF; font-weight: bold">new</span><span style="color: #E6EDF3">():</span><span style="color: #D2A8FF; font-weight: bold">add_flag</span><span style="color: #E6EDF3">(</span><span style="color: #79C0FF">Hit</span><span style="color: #E6EDF3">.</span><span style="color: #79C0FF">Confuse</span><span style="color: #E6EDF3">)</span><span style="color: #6E7681">  </span><span style="color: #E6EDF3">:</span><span style="color: #D2A8FF; font-weight: bold">cooldown</span><span style="color: #E6EDF3">(</span><span style="color: #D2A8FF; font-weight: bold">frames</span><span style="color: #E6EDF3">(</span><span style="color: #A5D6FF">2</span><span style="color: #E6EDF3">))</span>
+</code></pre></div>
+<p>Notice there's <code>:with_flags(...)</code> and <code>:add_flag(...)</code>. The former overwrites all at once. The latter can help format and add one at a time.</p>
+</li>
+<li>
+<p>Patched status animations restarting when statuses are applied on that frame. Status animations (confused, blind, etc.) will continue to play if they were already playing even on subsequence status applications.</p>
+</li>
+<li><code>DefenseFrameStateJudge</code> had unused <code>block_impact</code> and <code>is_impact_blocked</code> functions. It was repurposed and is now <code>block_collision</code> and <code>is_collision_blocked</code>. A new check for if <code>judge.is_collision_blocked</code> is <code>true</code> now occurs after <code>DefenseOrder::always</code> defense rule types.</li>
+<li>Bugfix: Using Keristero's Guard mod, when using it and changing forms, confirmed that the <code>end_action</code> callback is correctly executed.</li>
+<li>
+<p>PlayerForms now support <code>set_description(str)</code>.</p>
+<p><iframe src="https://youtube.com/embed/5DjTTTHhpWI" width="320" height="240" controls></iframe></p>
+</li>
+<li>
+<p>Battle background <code>.anim</code> files now support <code>@scroll left, top, frames</code> attribute.</p>
+<ol>
+<li>This attribute will overwite the <code>velx</code> and <code>vely</code> parameters in the scripted mob lua function <code>set_background</code>. Additionally, these two fields are now optional in lua and default to <code>0</code> if not provided. <code>mob:set_background(texture_path, anim_path, velx?, vely?)</code>.</li>
+<li>Similarly applied changes and exact behavior for scripted cards in lua which use animated background images.</li>
+</ol>
+</li>
+<li>Changing the charge table in lua now immediately applies the new values to the charge component.</li>
+<li>Bugfix: A drag event's last <strong>realized</strong> step applies endlag.</li>
+<li>Sea tiles add a +30 on aqua chips.</li>
+<li>
+<p>Feat: Mobs can replace the battle tiles with a custom thematic tileset.</p>
+<p><iframe src="https://youtube.com/embed/YTWM8Y7WkbE" width="320" height="240" controls></iframe></p>
+</li>
+<li>
+<p>Card damager modifier changes:</p>
+<ol>
+<li>... now takes an ID string in lua to identify the modification.</li>
+<li>... can be cleared the same way.</li>
+<li>... changes the value by id iff different from the last value.</li>
+</ol>
+</li>
+<li>Tile rule <code>TileRules.SeaBonusCheck</code> added.</li>
+<li>If chip <code>can_boost</code> is <code>false</code> damage number and multiplier are hidden.</li>
+<li><code>Player.is_charging</code> returns false if not charging buster, true otherwise.</li>
+<li>Sea panels also tick like poison for Fire characters.</li>
+<li>Bugfix: Weird shader effects in battle start at times for characters<ol>
+<li>Added Entity LOC into the RenderData table and made correct calls to refresh and re-apply the shader.</li>
+</ol>
+</li>
+<li>Removed all built-in background types except for Lan and Grid. This means you must provide your own backgrounds in servers or mods from here on out.</li>
+<li>Backgrounds use <code>tickrate</code> for pixel-perfect scrolling behavior. <ol>
+<li>To add scrolling, add <code>@Scroll left=p1. right=p1. frames=count</code> to your animation files for the background.</li>
+<li>The lua API for setting a background is now just <code>set_background(texture_path, anim_path)</code></li>
+<li>TiledMaps no longer read <code>Velocity</code> properties. Simply include the attribute to your animation file for servers.</li>
+</ol>
+</li>
+<li>Bugfix: Rainbow does not animate in NaviCust scene, or Status screen.</li>
+<li>Bugfix: Can't leave folder until I set a REG chip.</li>
+<li>Feature: Prevent backslashes to user name in config screen.</li>
+<li>Bugfix: Having one item left in the navi cust makes the RUN button disappear when you select it.</li>
+<li>Bugfix: Chip with + Damage is reset by navi who can charge on the first frame of battle</li>
+<li>Feat: chip charging can replace a chip's action.</li>
+<li>Feat: Tag chip support and data.</li>
+<li>The engine should have a keyboard capture status so that pressing 0 key while in textbo1. does not reboot on you.</li>
+<li>Invalid cards forever when you run out of chips fix.</li>
+<li>Make special chars a lua property instead of a function.</li>
+<li>Viewing an invalid card in the folder caused a crash fix.</li>
+<li>Tagged chip pair not showing up fix.</li>
+<li>If you have 30 chips and dont make an edit you can't leave FIX (AGAIN!).</li>
+<li>Remove remaining pointers in recent chip cust refactor.</li>
+<li>Provided way to do warpstep bug.</li>
+<li>If I make a change to my config controls and save, the soft reset does not respect my changes.</li>
+<li>Guaranteed frame-perfect key presses even during frame step on both single threaded and multithreaded modes.</li>
+<li>Ability to determine if an entity is a local player or not (for exclusive sounds).</li>
+<li>
+<p>Added new optional custom property "Warp Out" which defaults to <code>true</code> if not specified, but if set to <code>false</code> it triggers the handler without warping the player out automatically.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This allows anyone to use custom warps for literally any kind of warping and to do custom animations.</p>
+</div>
+</li>
+<li>
+<p>Add additional elements: <code>Recov</code>, <code>PanelDestruction</code>, <code>Invisible</code>.</p>
+</li>
+<li>Allow <code>player.on_pre_move_func()</code> to return <code>nil</code> as a no-opt. When <code>nil</code> is returned, there is no animation + no movement.</li>
+<li>Buster hit sound only plays on attack, not collision check 1. this allows guard to play <em>*TING*</em> correctly.</li>
+<li>
+<p>Added ability to swap out with human character for overworld segments.</p>
+<ol>
+<li>Custom jack-in animation.</li>
+</ol>
+<p><iframe src="https://youtube.com/embed/2TWqbFHjEew" width="320" height="240" controls></iframe></p>
+</li>
+<li>
+<p>Play buster hit sf1 on <code>attack_func</code>. Currently it is on hit which could be blocked by Guard/Defense Rules.</p>
+</li>
+<li>From Kirby: All panels animate during pause and other states. Magma panels dissapear after 980 frames.</li>
+<li>Bugfix: Magma tiles deal null damage now (previously fire). Thanks Kirby!</li>
+<li>From Kuri: They supplied custom chip cust graphics and the following information:<ol>
+<li>Patched everything to do with forms and form customization:<ol>
+<li>When opening the forms, the cursor is a frame late to reposition to the top</li>
+<li>After selecting a new form, the 1st frame of being open, the forms are not in the right place</li>
+<li>the 4th selected chip is underneath the chip lock sprite or missing entirely</li>
+<li>Form transformation timing is not correct<ol>
+<li>20 frames pass</li>
+<li>21st frame, it starts to turn white</li>
+<li>9 frames to become fully white</li>
+<li>9 frames to fade out</li>
+</ol>
+</li>
+<li>Pop in the health and emotion UI to the original top-left position and to the cust select widget during animations</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Bugfix: The frame that an entire team is deleted, should results in all other entities receiving 0 damage and no status effects.</li>
+<li><code>Battle.is_local_player(e)</code> -&gt; rename to the audio explicit version to prevent desyncs<ol>
+<li>Renamed to <code>Battle.play_audio_for_player_or_default(sound1, sound2, priority)</code>.</li>
+</ol>
+</li>
+<li>Add Lua function for anims <code>.refresh()</code> and <code>.update()</code><ol>
+<li>these functions dont explicitly need a sprites anymore either. Provide this option.</li>
+</ol>
+</li>
+<li>Lua to add/remove nodes to tiles<ol>
+<li>This way "custom" tiles can blink with the parent tile</li>
+</ol>
+</li>
+<li><code>PlayerMeta.set_charged_attack_level()</code> is now -&gt; <code>.set_charge_level()</code></li>
+<li>Add new API to <code>Game.cpp</code> to fetch the renderer to perform programmer-defined functions<ol>
+<li>Currently the <code>RenderOptions</code> list is useful.</li>
+<li><code>getController()-&gt;getRenderer&lt;MyCustomCustomer&gt;()-&gt;doCustomFunction();</code></li>
+</ol>
+</li>
+<li>Added Swoosh support for non-renderer events.</li>
+<li>Swoosh can now send data back to the next scene when called via <code>pop()</code> or <code>rewind()</code>!</li>
+<li>Added dark hole.</li>
+<li><code>SubChip</code> renamed to <code>SubItem</code>.</li>
+<li>SubItems have a category group for the <code>Head</code>, <code>Body</code>, and <code>Shoes</code> placement.</li>
+<li>SubItems with the same category will ask to overwrite the active spot.</li>
+<li>SubItems have a new <code>activateOnUse</code> field which, when true, places the item in the active spot client-side.</li>
+<li>(C++) SubItems are cleared at the end of a session.</li>
+<li>SubItems have an event that sends to the server.</li>
+<li>
+<p>Emails have an event that sends to the server.</p>
+<p><iframe src="https://youtube.com/embed/mNXbxG1D3jA" width="320" height="240" controls></iframe></p>
+</li>
+<li>
+<p>Added <code>SubItemAdd</code> packet which was missing.</p>
+</li>
+<li>Added <code>SubItemActivate(subitem_id, active)</code> to toggle the active subitem if applicable</li>
+<li>(C++) <code>OverworldSceneBase</code> class has a new <code>OnSubItemConsumeEvent()</code> to handle network callbacks in the online area scene.</li>
+<li>Feat: API for sending chip data for after battles.</li>
+<li>
+<p>Feat: API sending other battle reward types (health, monies, bits, etc.).</p>
+<p><iframe src="https://youtube.com/embed/mZLwz1dRMo8" width="320" height="240" controls></iframe></p>
+</li>
+<li>
+<p>Min and Max Emblem Size were 15x15. Size restrictions removed entirely.</p>
+</li>
+<li>Added a way to get viewport boundaries in screen/world space from Engine: <code>Engine.get_viewport_size(): {x=width, y=height}</code></li>
+<li>Similarly, added way to get tile from worldspace/screenspace point coordinates: <code>field:tile_from_pixels(x, y)</code></li>
+<li>Potentially fixed overworld collisions from allowing pixel-perfect diagonal crossing with a custom tri-leg algorithm approach.</li>
+<li><code>KeyItemScene</code> textbox scale issue fixed.</li>
+<li>Bugfix: removed red tag when no cards and no reg.</li>
+<li>Bugfix: Empty folder (and end of the folder) clears the codes from being visible.</li>
+<li>Bugfix: Giga class cards are no longer default when folder is empty.</li>
+<li>Moved multiplier out of <code>SelectedUI</code> widget to the chip properties as the new <code>x2</code> field<ol>
+<li>When x2 is <code>true</code>, damage is doubled only once. When <code>x2</code> is <code>false</code>, damage is halved if ever doubled.</li>
+</ol>
+</li>
+<li>Noted that the <code>OnHit</code> callbacks were never executed if <code>props.damage &lt;= 0</code>, so I took out those redundant checks IN the callback handler routine.</li>
+<li>Kano moved the <code>card_delete</code> and <code>hand_delete</code> hit props resolution to the base entity class.</li>
+<li>Card UUID property is now read-only.</li>
+<li>Components now have a <code>is_timefrozen()</code> function for components attached to an entity.</li>
+<li>Adjusted card damage modifier graphics on all states that print the modifiers based on the source material.</li>
+<li>Camera packets that shake with intensity or duration of zero (0) will stop the shake effect.</li>
+<li>Entities in battle can call <code>stop_camera_shake()</code> to also end the camera shake effect.</li>
+<li><span class="hidden">SECRET</span>.</li>
+<li><span class="hidden">SECRET</span>.</li>
+<li><span class="hidden">SECRET</span>.</li>
+<li><span class="hidden">SECRET</span>.</li>
+<li>Engine support <code>@loop</code> attribute everywhere for anims. <code>@loop start=x, end=y</code>.</li>
+<li>Overworld supports <code>@on_move_change</code> for anims and only has two types of keys: <code>reverse</code> and <code>forward</code>.</li>
+<li><span class="hidden">SECRET</span>.</li>
+<li>Added lua bindings to <code>tickrate</code> struct:<ol>
+<li><code>tickrate.new(units: int, delay: uint = 0)</code>.</li>
+<li>Fields: units, delay. </li>
+<li>The only function: <code>digest(frames: frametime) -&gt; int</code>.</li>
+</ol>
+</li>
+<li>Anim method <code>set_playback_speed()</code> now takes in <code>tickrate</code> to support frame delays (sub &lt;1 frame per tick speeds).</li>
+<li>Added an overload for <code>set_playback_speed()</code> to take in <code>frametime</code> for compatibility with olds mods.</li>
+<li>Anim method <code>get_playback_speed()</code> likewise returns <code>tickrate</code>.</li>
+<li>Updated function signature: <code>Explosion.new(count: int, speed: tickrate)</code>.</li>
+<li>Bugfix: <span class="hidden">SECRET</span>.</li>
+<li>Added optimization to animations so that cpu cycles for long-looping animations should stablize.</li>
+<li>Ensured new "loop points" for overworld animations are working.<ol>
+<li>See: Megalo_player_GyroMan.zip from D3str0y3d.</li>
+</ol>
+</li>
+<li>Bugfix: UI layer updates and draws itself on the correct frame as expected.</li>
+<li>Feat: Server can now see what Cust Parts the client has installed for the current player mod:<ol>
+<li>Server can now see this event with <code>Net.on('progblocks_upsert', event)</code><ol>
+<li><code>event</code> = <code>{player_id, [pool], [active]}</code></li>
+<li><code>pool</code> = <code>{id, quantity}</code></li>
+<li><code>active</code> = <code>id, form?, color: string? center? rotates? compiled?</code></li>
+<li><code>form</code> = <code>[bool; 15]</code></li>
+</ol>
+</li>
+<li>Send whether or not a piece was on the compile line <code>compiled</code>.</li>
+<li>Fix the cursor alignment math when grabbing a bloc.</li>
+</ol>
+</li>
+<li>Feat: <code>GameSession</code> is now the source of truth for the player's stats in the engine.</li>
+<li>Bugfix: Regression: Blocks are not inserting intro the grid after rotations correctly</li>
+<li>Bugfix: Regression: Thread-friendly input consumers (frameskip, fullscreen, etc.) no longer work.</li>
+<li>Bugfix: Regression: Fullscreen toggle in multithreaded mode crash.</li>
+<li>Feat: <code>-f</code> or <code>--fullscreen</code> flags supported from console launch.</li>
+<li>Bugfix: First-time fresh boot of client doesn't load any resources from mods and crashed in Navi Select.</li>
+<li>Bugfix: Tweaked charge effect animation.</li>
+<li>Bugfix: <code>Battle.play_audio_for_player_or_default(...)</code> crash fix.</li>
+<li>Bugfix: Running out of cards now correctly erases the card icons from their slots.</li>
+<li>Feat: <span class="hidden">SECRET</span>.</li>
+<li>Bugfix: Fix stair layer ordering regression with new renderer in overworld.</li>
+<li>Feature: During chip select, added a callback function on the hover card state to take in the player and mutate chips in the deck. e.g. Maramusa.<ol>
+<li><code>CardBuilderTrait.on_update</code> -&gt; <code>CardBuilderTrait.on_tick</code>.</li>
+<li><code>card_on_tick(actor, props)</code> for the lua mod, runs every frame tick during the Cust Selection Battle state.</li>
+<li>GUI caches damage value when it makes a new chip selection and draws this cached value like the games.</li>
+<li><code>print_uncertain_damage</code> renamed -&gt; <code>is_mystery_damage</code>.</li>
+<li>ALL next cards (top-most card) in a <code>Player</code>'s hand will now call <code>cards_on_tick</code> during combat as well.</li>
+</ol>
+</li>
+<li>Patch: Buster max charge time can never be less than zero + hard-coded 10 frames of startup delay.</li>
+<li>Debug flag added to external device processor to draw sprite origins with color. This used used in the ONB Inspector tool.</li>
+<li>Migrated all and partially rewrote player session data pertaining to folders into a new <code>FolderRecords</code> struct.<ol>
+<li>This struct now has additional properties for the player's current session: <code>folderLimit</code>, <code>canCreate</code>, <code>canEdit</code>, <code>canEquip</code>, <code>forceEquip</code></li>
+<li>The server can send these events and the client reads these values.</li>
+</ol>
+</li>
+<li>Renamed lua sprite methods <code>set_layer</code> to <code>set_draw_priority</code> which is more accurate now. This change was also made in the C++ code.</li>
+<li>New <code>set_draw_bits</code> represents the group + order info used by the retro renderer to retarget sprites and object sprites.<ol>
+<li>Method signature <code>set_draw_bits(unsigned int group, unsigned int destLayer)</code>.</li>
+<li><code>destLayer</code> is optional!</li>
+<li>Groups: <ol>
+<li><code>Background = 0</code></li>
+<li><code>Floor = 1</code></li>
+<li><code>Object = 2</code></li>
+<li><code>Attack = 3</code></li>
+<li><code>Effect = 4</code></li>
+<li><code>Misc = 5</code></li>
+</ol>
+</li>
+<li>Destination Layers are just <code>Groups</code>.<ol>
+<li>This is to retarget object sprites and can be omitted.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Feat: Support sprite flipping at the node class and remove other implementations.<ol>
+<li>Completed goal: Alpha mod shows that GBA layering is correct when flipping screen.</li>
+</ol>
+</li>
+<li>Feat: <code>status_cooldown: frames</code> field added to hitbox props.</li>
+<li>Bufix: Restored freeze on ice panel when hit with water elements.</li>
+<li>Bugfix: Restored cancel ice at EOF when hit with true breaking.</li>
+<li>Feat: Optimized <code>Field</code> and <code>Tile</code> class iterations per tick.</li>
+<li>Lua anim object has a new <code>set_keyframe(index, sprnode?)</code> function.</li>
+<li>Added complementary <code>get_keyframe_index(): int</code> to lua anim objects.</li>
+<li>
+<p>Feat: Server can now overwrite player folder session traits and permissions.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/folder_perms.png" data-desc-position="bottom"><img alt="" src="../images/folder_perms.png"></a></p>
+</li>
+<li>
+<p>Feat: When using the link gate, the chip no longer auto-fires (manual activation).</p>
+<p><iframe src="https://youtube.com/embed/fC3-eGVylLQ" width="320" height="240" controls></iframe></p>
+</li>
+<li>
+<p>Feat: You can now select a chip from the pool for overworld games.</p>
+<ol>
+<li>You can configure the event name, the types of chips that are allowed, the number of chips, etc.</li>
+</ol>
+<p><iframe src="https://youtube.com/embed/p_Bf0Z1NSUo" width="320" height="240" controls></iframe></p>
+</li>
+<li>
+<p>Streams live logs to the registered external device (e.g. ONB Inspector tool) if ran with <code>-d</code> flag</p>
+</li>
+<li>
+<p>Feat: No more console window. The debugger tool is now optional.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/debugger.png" data-desc-position="bottom"><img alt="" src="../images/debugger.png"></a></p>
+</li>
+<li>
+<p>Feat: camera zoom is enabled for a map for PC players via <code>PgUp</code> and <code>PgDn</code>.</p>
+</li>
+<li>
+<p>Feat: Rewrote tile rendering and added camera-culling! Strictly tiles in view of the camera are drawn.</p>
+<ol>
+<li>Culling
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/map_culling.png" data-desc-position="bottom"><img alt="" src="../images/map_culling.png"></a></li>
+<li>Layer special effects. <a href="https://x.com/OpenNetBattle/status/1880746436138246379?s=20">Link 1</a>. <a href="https://x.com/OpenNetBattle/status/1880746037142536685?s=20">Link 2</a>.</li>
+<li>Complete control of each tile. <a href="https://x.com/OpenNetBattle/status/1880745741314048152?s=20">Link 1</a>.</li>
+</ol>
+</li>
+<li>
+<p>Feat: Server can overwrite/set/get Tag mem, Reg mem, and Card Limits.</p>
+</li>
+<li>Bugfix: Textbox responds to text escape codes properly (e.g. mute, slow, speed up).</li>
+<li>Feat: Added <code>Layer 0</code> wiggle support.</li>
+<li>
+<p>Feat: "Fragments" info section appears in menu only when <code>fragments &gt; 0</code>.</p>
+<p><iframe src="https://youtube.com/embed/JYLfeZnmPi8" width="320" height="240" controls></iframe></p>
+</li>
+<li>
+<p>Bugfix: Characters which were not spawned by the mob spawner could not properly use timestop actions (the action does not execute, and does not freeze time).</p>
+</li>
+<li>Bugfix: Player <code>FinishConstructor()</code> function should overwrite shoot, swing, throw, and flinch animations too.<ol>
+<li>Flinch frame was overwriting non-existent entries, resulting in less frames to complete. This was unfair. Ensured overwrites generate valid anims that wait for duration specified.</li>
+</ol>
+</li>
+<li>Feat: Server API for creating, updating, equipping, etc. folders:<ol>
+<li>Client had to change from taking in a string to requiring a position index, starting at <code>1</code>.</li>
+<li>This resolved most of the remaining known permission syncing issues.</li>
+</ol>
+</li>
+<li>Bugfix: Fixed the remainder of permission issues using wrong bitwise math.</li>
+<li>Bugfix: Fixed <code>Net.write_player_folder()</code> API. All codes were being overwritten to <code>0</code>.</li>
+<li>Bugfix: Fixed <code>Net.inc_player_card_pool()</code> and <code>Net.dec_player_card_pool()</code> API. Same problem as <code>write_player_folder()</code> as well plus the signature changed in rust but had not in lua.<ol>
+<li>Sig: <code>Net.inc_player_card_pool(player_id, list {id: str, code: u8, count: u8})</code></li>
+<li>Sig: <code>Net.dec_player_card_pool(player_id, list: id: str, code: u8, count: u8})</code></li>
+</ol>
+</li>
+<li>
+<p>Added MiniGameFramework (MGF) widget support.</p>
+<ol>
+<li>Support for Progress Bars Implemented</li>
+<li>
+<p>Support for Textures as the Progress Bar Implemented</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This event was a precursor to Sprite API in <code>2.1</code>.
+This is a client-side widget for upcoming minigame framework.</p>
+</div>
+</li>
+</ol>
+</li>
+<li>
+<p>Feat: <span class="hidden">SECRET</span>.</p>
+</li>
+<li>Feat: Client + Server can send/read mail events.</li>
+<li>
+<p>Flavored Text implemented engine-wide:</p>
+<ol>
+<li>Wavy Text implemented</li>
+<li>Jitter Text implemented</li>
+<li>Rainbow Text implemented</li>
+<li>These effects automatically work whereever custom strings are allowed.</li>
+</ol>
+<p><iframe src="https://youtube.com/embed/kvBPSNw4TVA" width="320" height="240" controls></iframe></p>
+</li>
+<li>
+<p>New Start Menu + Start Up Sequence + Logo</p>
+</li>
+<li>Imported, configured, and programmed correct fonts for folder widgets.</li>
+<li>
+<p>Feat: Replaced LIMIT system with chips with highly requested MB system.</p>
+<p><iframe src="https://youtube.com/embed/TV8o9Rixa_g" width="320" height="240" controls></iframe></p>
+</li>
+<li>
+<p>Feat: Stackable Cust Parts</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Finally, no one has to make multiple of the same mod and the engine
+tracks dupes client-side correctly.</p>
+</div>
+<p><iframe src="https://youtube.com/embed/N1S1Jj45jY0" width="320" height="240" controls></iframe></p>
+</li>
+<li>
+<p>Feat: Scriptable Program Advances!</p>
+<p><iframe src="https://youtube.com/embed/xX1AJwItG8E" width="320" height="240" controls></iframe></p>
+</li>
+<li>
+<p>Bugfix: form crash fix.</p>
+</li>
+<li>Feat: Chips can be queued.</li>
+<li>Feat: Scriptable Character spawn intros.</li>
+<li>Feat: Popular Request: anything can be deleted/removed in intros.</li>
+<li>Feat: Popular Request: added <code>-z</code> flag skips the client boot and title screen.</li>
+<li>Feat: Eensured that title screen layer quantity can be made dynamic.<ol>
+<li>The client reads the directory for titlescreen assets.</li>
+<li>This allows for even more client customization.</li>
+</ol>
+</li>
+<li>Bugfix: Removes a function ptr copy to the animation's interrupt routine when copy_from is invoked (this was running CardAction's end routine any time set_state() was ran subsequently and causing a crash)</li>
+<li>Feat: added <em>fairly</em> cust-accurate emblem.<ol>
+<li>Optional for player mods.</li>
+</ol>
+</li>
+<li>Added <code>TileState.length</code> to TileState enum in lua to make field randomization easier.</li>
+<li>Bugfix: Fixed volcano sprite refresh reported issue.</li>
+<li>Feat: Tile pack provided by Rune.</li>
+<li>Bugfix: Ice slide bug.</li>
+<li>Feat: Custom cust screen button and lua bindings.</li>
+<li>Feat: A chip can show up when you select your custom button.</li>
+<li>Bugfix: Child nodes recolor correctly thanks to Alrysc.</li>
+<li>New art provided by Enzan/DJ Rezzed: new battle reward skin.</li>
+<li>Feat: psuedo-hot reloading.<ol>
+<li>When launching client with <code>-d</code> debug flag you can now press <code>Num0</code> to reboot client.</li>
+<li>This feature is engine-wide and can also reboot directly into battle-only mode <code>-b</code>.</li>
+<li>This feature automatically reloads mods and is great for quick iterations.</li>
+</ol>
+</li>
+<li>Bugfix: Swoosh activity controller is now threadsafe.</li>
+<li>Bugfix: Discovered and patched the sol memory leak.</li>
+<li>Bugfix: Holding charge key down will recharge after flinch just like in the games.</li>
+<li>Bugfix: Regression: key inputs can be read during time freeze.</li>
+<li>Bugfix: Fixed the missing number <code>9</code> glyph in the megabytes draw.</li>
+<li>Bugfix: Fixed the asterisk character <code>*</code> not displaying correctly in card preview.</li>
+<li>Bugfix: Fixed the <code>Broken</code> tile state not working correctly when cracking tiles.</li>
+<li>Bugfix: Correctly applied card type limits to the engine at boot.</li>
+<li>Bugfix: Client replaces the boot, intro, and title scenes instead of pushing onto the stack which greatly reduces memory.</li>
+<li>Adjusted <code>InputRepeater</code> valused to match the delay from the games. <ol>
+<li>Menu controls should feel a little more tighter and less sensitive.</li>
+</ol>
+</li>
+<li>Bugfix: Caos (aka Shoes) found some more utf8 pathing issues in the scripts which we fixed via the C++ side.</li>
+<li>Feat: Added in-game rule checks and messages to the player when adding chips of each class and MB limit category.</li>
+<li>Feat: In-game rules are dynamic.<ol>
+<li>e.g. MegaChip limit could be increased via a Cust Part.</li>
+</ol>
+</li>
+<li>Feat: Rewrote the Folder Edit scene including the sort menu.</li>
+<li>Clamped FPS subtitle string to 4 characters (no more very long FPS values).</li>
+<li>Feat: Folders no longer disable and prevent you from editing them.<ol>
+<li>Now only ill-formed folders prevent you from equipping them.</li>
+</ol>
+</li>
+<li>Feat: Web Launcher (ONBWEL) revealed.</li>
+<li>Bugfix: Fixed time freeze crash when using chip during flinch.</li>
+<li>Feat: Timestop chips correctly reposition player animation before and after.</li>
+<li>Feat: A chip cannot be used while flinched - but they are correctly queued.</li>
+<li>An attempt was made to perfect buster-canceling movement.</li>
+<li>Feat: Chip charge mechanics.</li>
+<li>Combo names (PAs) are not longer truncated to 9 characters.</li>
+<li>Subsequent screen shakes are no longer queued from time freeze attacks.</li>
+<li><code>VirtualInputState</code> is now a property for all <code>Entity</code>s.<ol>
+<li>This structure is now independant from the input polled by the OS.</li>
+</ol>
+</li>
+<li>
+<p>Feat: Implemented REG and TAG chips.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/tag_chip.png" data-desc-position="bottom"><img alt="" src="../images/tag_chip.png"></a></p>
+</li>
+<li>
+<p>Feat: Implemented tile rules API.</p>
+<ol>
+<li>Tile rules allow for complex tile behavior and covers movement, sharing, and combat.</li>
+</ol>
+<p><iframe src="https://youtube.com/embed/6t1qbGbjtOg" width="320" height="240" controls></iframe></p>
+</li>
+<li>
+<p>Client and Lua support for <code>unreserve_entity_by_id(ID)</code> added.</p>
+</li>
+<li>Feat: Implemented new anim file format rules.<ol>
+<li>Engine still supports "legacy" format. </li>
+</ol>
+</li>
+<li>Feat: Reg Tag chips show up first in the battle as expected.</li>
+<li>Feat: Game accurate explosions.</li>
+<li>More accurate battles: Battle doesn't end until last enemy's explosions are complete.</li>
+<li>
+<p>Feat: Client multiple language support.</p>
+<ol>
+<li>Default is <code>en</code> - english language.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/i18n.png" data-desc-position="bottom"><img alt="" src="../images/i18n.png"></a></p>
+</li>
+<li>
+<p>Feat: Server multiple language support.</p>
+</li>
+<li>Feat: replaced delta time with tick engine-wide for updates.<ol>
+<li>This allows game to be frame-accurate.</li>
+</ol>
+</li>
+<li>Feat: Reduced mod loading prior to request.</li>
+<li>Feat: New <code>TextboxTestScene</code> <ol>
+<li>Allows users to boot the client with mugshot and text to ensure dialog looks correct.</li>
+<li><code>client.exe --chatbox --png path/to/a -anim path/to/b --dialog path/to/dialog.txt</code></li>
+<li><code>TextboxTestScreen</code> shows how many lines are left.</li>
+<li>New "Launch textbox" button can test in-game dialog from ONBWEL.</li>
+</ol>
+</li>
+<li>Feat: Lazy mod dependency resolution at bootup implemented.</li>
+<li>Added <code>package:set_ability_name(str)</code> for Player mods to change the charge ability name in the Player Stat screen.</li>
+<li>Feat: Player Stat screen is now complete. <ol>
+<li>Reg Mem, card limits, and installed blocks show up in the 2nd window area. </li>
+<li>Stats update live after installing blocks too!</li>
+</ol>
+</li>
+<li>Navi cust screen is now more accurate to the game and fixed some bugs that were discovered.</li>
+<li>Client support to manage player buffs during combat.</li>
+<li>
+<p>Feat: hold the <code>SHIFT</code> key to fast forward the game.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This will be disabled when visiting an online server.</p>
+</div>
+</li>
+<li>
+<p>Feat: <span class="hidden">SECRET</span>. </p>
+</li>
+<li>Feat: Rewrite of card action life-cycle and abilities engine-wide:<ol>
+<li>Introduced <code>Peek</code> event.</li>
+<li>Introduced <code>Ephemeral</code> card types.</li>
+</ol>
+</li>
+<li>Bugfix: Lua-provided charge time table bug (not updating) has been patched, finally.</li>
+<li>Renamed the charge time table function to <code>charge_time_func</code> in lua to try and standardize the lua API.</li>
+<li>Feat: Added an input focus feature in the engine that blocks debug keys from running while other widgets are using text input (e.g. textbox prompt).</li>
+<li><code>frametime</code> values can now be printed in lua e.g. <code>print(frametime.value)</code>.</li>
+<li>Bugfix: Fixed horrible problem that has lingered in here for who knows how long: the engine correctly tags mods so you can load them in scripts (e.g. <code>CardFrom(uuid)</code>).</li>
+<li>Engine provided special chars are now a lua property instead of a costly function.</li>
+<li>Bugfix: Viewing an invalid chip in the folder no longer crashes.</li>
+<li>Feat: If your folder is not adequate, the navi prompts a question to really leave.<ol>
+<li>This routine runs if folder has less than the required chips. </li>
+<li>If the folder rules are not met, instead of a question, the navi prompts the user with the reason and does not exit the screen.</li>
+</ol>
+</li>
+<li>FEAT: <span class="hidden">SECRET</span>.</li>
+<li>Prototype new (buggy) interactive server to reboot and quit.</li>
+<li>Server supports swapping OW costumes for "playable" operators.</li>
+<li>Both client and server supports an additional button (R trigger) to be captured by scripts to do Jack-in or Hints like in single player games.</li>
+<li>Server examples scripts now show how to create overworld segments.</li>
+<li>Feat: Chip cust widget finally rewritten since the first ONB days to use the <code>SceneNode</code> system for drawing.</li>
+<li>All chip cust art is now moved to <code>/resources/ui/cust_gui/</code> so new skin packs can be made.</li>
+<li>Feat: <span class="hidden">SECRET</span>.</li>
+<li>Feat: For the first time since v1.0, the chip cust drawn routine has been rewriten and even the cust itself can be animated! </li>
+<li>Feat: Rewrote all engine draw routines to use new plug-n-play renderer.<ol>
+<li>Default renderer is "classic" (retro GBA-style) rendering.</li>
+</ol>
+</li>
+<li>Added <code>props.print_uncertain_damage = true</code> field to card props to print <code>???</code>.</li>
+<li>Feat: Panels animate during pause and other sub-combat states where everything else normally pauses animation. This is more accurate.</li>
+<li>Magma panels (lava) flicker out after accurate frames.</li>
+<li>New server function to toggle Navi HUD for overworld games </li>
+<li>Feat: When the battle is over, combat can still simulate.<ol>
+<li>This is like in the games: no one takes damage or status effects. </li>
+</ol>
+</li>
+<li>Added <code>Battle.get_turn_count()</code> to lua which returns the turn count.</li>
+<li>Added lua object anim function for <code>refresh()</code> and <code>tick()</code>.<ol>
+<li>These functions don't explicitly need a sprite input anymore either.</li>
+</ol>
+</li>
+<li>Feat: <span class="hidden">SECRET</span>.</li>
+<li><code>PlayerMeta.set_charged_attack_level</code> -&gt; renamed to just <code>set_charge_level</code>.</li>
+<li>Added dark hole: <code>TileState.dark_hole</code>.</li>
+<li>Feat: <span class="hidden">SECRET</span>.</li>
+<li>Feat: Emotions are now modifiable.<ol>
+<li><code>entity:mod_emotion_value(inc)</code></li>
+<li>Similarly taking damage can now put players in the <code>Anxious</code> state.</li>
+</ol>
+</li>
+<li>Feat: <span class="hidden">SECRET</span>.</li>
+<li>Bugfix: Evil emotion no longer changes player's color.</li>
+<li>Added <code>Battle.play_audio_for_player_or_default(entity, playerSound, otherSound, audioPriority)</code><ol>
+<li>Will play <code>playerSound</code> if and only if the entity is the local player. Otherwise it will play <code>otherSound</code>.</li>
+</ol>
+</li>
+<li>Bugfix: Fixed reported animation problem with warping in. No more moon walk.</li>
+<li>Feat: <span class="hidden">SECRET</span>.</li>
+<li>Feat: <span class="hidden">SECRET</span>.</li>
+<li>Feat: <span class="hidden">SECRET</span>.</li>
+<li>Feat: ONBWEL will now AUTO-join the server launched from web links.<ol>
+<li>A box informs you if a connection failed and returns to the PET home.</li>
+</ol>
+</li>
+<li>Bugfix: Fixed overworld teleportation bug.<ol>
+<li>When converting seconds to frames, the check that someone was too far away was wrong causing pretty much everyone to teleport out constantly online.</li>
+</ol>
+</li>
+</ol>
+</section>
+
+<section id="mkdocs-terminal-after-content">
+    
+</section>
+
+            </main>
+        </div>
+        <hr><a href="https://bsky.app/profile/opennetbattle.bsky.social">BlueSky</a> | <a href="https://gamejolt.com/games/OpenNetBattle/509302">GameJolt</a> | <a href="https://docs.google.com/document/d/1aUvNsD4oN5JkAHg1HeivZs1uEvSHYrcKO4J8Xdl8X6g/edit?usp=sharing">Real PET</a> | <a href="https://x.com/OpenNetBattle">X</a>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+
+
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body></html>

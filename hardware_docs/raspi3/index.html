@@ -1,0 +1,572 @@
+<!DOCTYPE html><html lang="en"><head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+    
+    <meta name="description" content="Home and news for the first open net battle online experience."> 
+    
+    <meta name="author" content="TheMaverickProgrammer"> 
+    <link rel="icon" type="image/png" sizes="192x192" href="../../img/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="../../img/android-chrome-512x512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png">
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../img/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+
+
+    
+ 
+<title>Raspi3 - Open Net Battle</title>
+
+
+<link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../css/normalize.css" rel="stylesheet">
+<link href="../../css/terminal.css" rel="stylesheet">
+<link href="../../css/theme.css" rel="stylesheet">
+<link href="../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../css/theme.footer.css" rel="stylesheet">
+<!-- dark color palette -->
+<link href="../../css/palettes/dark.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+    
+    <link href="../../assets/css/custom.css" rel="stylesheet"> 
+    <link href="../../assets/css/neoteroi-mkdocs.css" rel="stylesheet">  
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../..",
+    shortcuts = "{}";
+</script>
+<script src="../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../search/main.js"></script>
+    
+
+    
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+        </style></head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Open Net Battle</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../.." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">GET</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../../faq/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">FAQ</span>
+                    </a>
+                    <meta property="position" content="1">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../../resources/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">RES</span>
+                    </a>
+                    <meta property="position" content="2">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../../credits/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">WHO</span>
+                    </a>
+                    <meta property="position" content="3">
+                </li>
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="4">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../..">GET</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../faq/">FAQ</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../resources/">RES</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../credits/">WHO</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">LOG</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../changelogs/two_point_one/">2.1</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../changelogs/two_point_five/">2.5</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#arm-rasp-pi-3-on-bazzite">ARM Rasp Pi 3 On Bazzite</a></li>
+        <li><a href="#tutorial">Tutorial</a></li>
+        <li><a href="#tool-chains">Tool chains</a></li>
+        <li><a href="#transferring-files">Transferring Files</a></li>
+        
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+    
+    
+    
+    
+    
+
+<section id="mkdocs-terminal-content">
+    <h3 id="arm-rasp-pi-3-on-bazzite">ARM Rasp Pi 3 On Bazzite<a class="headerlink" href="#arm-rasp-pi-3-on-bazzite" title="Permanent link">#</a></h3>
+<!-- TOC -->
+<ul>
+<li><a href="#arm-rasp-pi-3-on-bazzite">ARM Rasp Pi 3 On Bazzite</a><ul>
+<li><a href="#author">Author</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#image">Image</a></li>
+</ul>
+</li>
+<li><a href="#tutorial">Tutorial</a><ul>
+<li><a href="#preparing-qemu">Preparing <code>Qemu</code></a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#credentials">Credentials</a></li>
+<li><a href="#resizing">Resizing</a></li>
+</ul>
+</li>
+<li><a href="#tool-chains">Tool chains</a><ul>
+<li><a href="#system">System</a><ul>
+<li><a href="#openssl"><code>OpenSSL</code></a></li>
+</ul>
+</li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#c">C++</a></li>
+</ul>
+</li>
+<li><a href="#transferring-files">Transferring Files</a><ul>
+<li><a href="#from-host-to-container">From Host To Container</a></li>
+<li><a href="#container-to-image">Container To Image</a></li>
+<li><a href="#image-to-container">Image To Container</a></li>
+<li><a href="#container-to-host">Container To Host</a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+
+<h4 id="author">Author<a class="headerlink" href="#author" title="Permanent link">#</a></h4>
+<p>James King | <a href="https://github.com/TheMaverickProgrammer">https://github.com/TheMaverickProgrammer</a></p>
+<h4 id="about">About<a class="headerlink" href="#about" title="Permanent link">#</a></h4>
+<p>This tutorial installs a raspberry pi 3 virtual image running inside of <code>podman</code> on <a href="https://bazzite.gg/">Bazzite</a>; configured for modern development. </p>
+<p>These instructions should also work on Fedora or other compatible unix-based operating systems.</p>
+<h4 id="image">Image<a class="headerlink" href="#image" title="Permanent link">#</a></h4>
+<p>I used this image: <code>lukechilds/dockerpi pi3</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/lukechilds/dockerpi">https://github.com/lukechilds/dockerpi</a></p>
+</blockquote>
+<h3 id="tutorial">Tutorial<a class="headerlink" href="#tutorial" title="Permanent link">#</a></h3>
+<h4 id="preparing-qemu">Preparing <code>Qemu</code><a class="headerlink" href="#preparing-qemu" title="Permanent link">#</a></h4>
+<p>These are the shell commands I ran to prepare qemu on my Bazzite host machine.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>sudo<span style="color: #6E7681"> </span>-i
+rpm-ostree<span style="color: #6E7681"> </span>install<span style="color: #6E7681"> </span>qemu-user-static
+systemctrl<span style="color: #6E7681"> </span>reboot
+</code></pre></div>
+<h4 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">#</a></h4>
+<p>We want to mount our file-system image in order to resize it later with <code>qemu</code>. Before we can mount the image, we need to be sure rootless podman has the correct permissions to access our host using <code>unshare</code>. We will create a subdirectory on our host machine that we will share and mount the file-system named <code>.dockerpi</code>.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>mkdir<span style="color: #6E7681"> </span>./dockerpi
+podman<span style="color: #6E7681"> </span>unshare<span style="color: #6E7681"> </span>chown<span style="color: #6E7681"> </span><span style="color: #A5D6FF">200</span>:200<span style="color: #6E7681"> </span>-R<span style="color: #6E7681"> </span>.dockerpi/
+</code></pre></div>
+<p>In this example, we are choosing to assign <code>200</code> as the <code>userID</code> given to podman later.</p>
+<blockquote>
+<p>The&nbsp;<code>:Z</code>&nbsp;flag is crucial on SELinux-enabled systems to allow container access to the mounted directory.</p>
+</blockquote>
+<p>We can verify that permissions were given by running <code>unshare</code> with <code>-al</code>.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>podman<span style="color: #6E7681"> </span>unshare<span style="color: #6E7681"> </span>ls<span style="color: #6E7681"> </span>-al<span style="color: #6E7681"> </span>.dockerpi
+<span style="color: #6E7681">    </span>total<span style="color: #6E7681"> </span><span style="color: #A5D6FF">4024112</span>
+<span style="color: #6E7681">    </span>drwxrwxrwx.<span style="color: #6E7681"> </span><span style="color: #A5D6FF">1</span><span style="color: #6E7681">  </span><span style="color: #A5D6FF">200</span><span style="color: #6E7681">  </span><span style="color: #A5D6FF">200</span><span style="color: #6E7681">         </span><span style="color: #A5D6FF">28</span><span style="color: #6E7681"> </span>Nov<span style="color: #6E7681">  </span><span style="color: #A5D6FF">7</span><span style="color: #6E7681"> </span><span style="color: #A5D6FF">21</span>:17<span style="color: #6E7681"> </span>.
+<span style="color: #6E7681">    </span>drwx------.<span style="color: #6E7681"> </span><span style="color: #A5D6FF">1</span><span style="color: #6E7681"> </span>root<span style="color: #6E7681"> </span>root<span style="color: #6E7681">        </span><span style="color: #A5D6FF">712</span><span style="color: #6E7681"> </span>Nov<span style="color: #6E7681">  </span><span style="color: #A5D6FF">7</span><span style="color: #6E7681"> </span><span style="color: #A5D6FF">22</span>:49<span style="color: #6E7681"> </span>..
+<span style="color: #6E7681">    </span>-rw-r--r--.<span style="color: #6E7681"> </span><span style="color: #A5D6FF">1</span><span style="color: #6E7681"> </span>root<span style="color: #6E7681"> </span>root<span style="color: #6E7681"> </span><span style="color: #A5D6FF">8589934592</span><span style="color: #6E7681"> </span>Nov<span style="color: #6E7681">  </span><span style="color: #A5D6FF">7</span><span style="color: #6E7681"> </span><span style="color: #A5D6FF">23</span>:53<span style="color: #6E7681"> </span>filesystem.img
+</code></pre></div>
+<p>We can see the first row has <code>200</code> in the <code>userID</code> columns.</p>
+<p>Now we are ready to pull and install the image to the target volume:</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>podman<span style="color: #6E7681"> </span>run<span style="color: #6E7681"> </span>--user<span style="color: #6E7681"> </span><span style="color: #A5D6FF">200</span><span style="color: #6E7681"> </span>-it<span style="color: #6E7681"> </span>-v<span style="color: #6E7681"> </span><span style="color: #79C0FF">$HOME</span>/.dockerpi:/sdcard:Z<span style="color: #6E7681"> </span><span style="color: #79C0FF">\</span>
+<span style="color: #6E7681">    </span>lukechilds/dockerpi<span style="color: #6E7681"> </span>pi3
+</code></pre></div>
+<p>This will take some time. Once the setup is finished, enter the default pi credentials.</p>
+<h4 id="credentials">Credentials<a class="headerlink" href="#credentials" title="Permanent link">#</a></h4>
+<p>user: <code>pi</code>
+pass: <code>raspberry</code></p>
+<p>One the system has authorized and given control over to shell, check to see if the environment looks healthy. Then, power off the container. The file-system will persist.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>sudo<span style="color: #6E7681"> </span>poweroff
+</code></pre></div>
+<blockquote>
+<p>The <code>pi3</code> image is experimental and has issues on shutdown. Once you see the shutdown process is reached, it <strong>should</strong> hang. This is expected. Simply <code>stop</code> the container using <code>podman</code> in another terminal.</p>
+</blockquote>
+<h4 id="resizing">Resizing<a class="headerlink" href="#resizing" title="Permanent link">#</a></h4>
+<p>The default pi image is too small for modern development. We are going to use <code>qemu-img</code> to resize the image and then update the boot sectors of the image to adapt to the new size. In this example, the new size is <code>10G</code>.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>sudo<span style="color: #6E7681"> </span>qemu-img<span style="color: #6E7681"> </span>resize<span style="color: #6E7681"> </span>-f<span style="color: #6E7681"> </span>raw<span style="color: #6E7681"> </span><span style="color: #79C0FF">$HOME</span>/.dockerpi/filesystem.img<span style="color: #6E7681"> </span>10G
+<span style="color: #79C0FF">startsector</span><span style="color: #FF7B72; font-weight: bold">=</span><span style="color: #FF7B72">$(</span>fdisk<span style="color: #6E7681"> </span>-u<span style="color: #6E7681"> </span>-l<span style="color: #6E7681"> </span><span style="color: #79C0FF">$HOME</span>/.dockerpi/filesystem.img<span style="color: #6E7681"> </span><span style="color: #E6EDF3">|</span><span style="color: #6E7681"> </span>grep<span style="color: #6E7681"> </span>filesystem.img2<span style="color: #6E7681"> </span><span style="color: #E6EDF3">|</span><span style="color: #6E7681"> </span>awk<span style="color: #6E7681"> </span><span style="color: #A5D6FF">'{print $2</span>
+<span style="color: #A5D6FF">}'</span><span style="color: #FF7B72">)</span>
+</code></pre></div>
+<p>Verify that <code>startsector</code> has the new address.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code><span style="color: #E6EDF3">echo</span><span style="color: #6E7681"> </span><span style="color: #79C0FF">$startsector</span>
+<span style="color: #6E7681">    </span><span style="color: #A5D6FF">532480</span>
+</code></pre></div>
+<p>Then use <code>parted</code> to make a new partition in the image.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>sudo<span style="color: #6E7681"> </span>parted<span style="color: #6E7681"> </span><span style="color: #79C0FF">$HOME</span>/.dockerpi/filesystem.img<span style="color: #6E7681"> </span>--script<span style="color: #6E7681"> </span>rm<span style="color: #6E7681"> </span><span style="color: #A5D6FF">2</span>
+sudo<span style="color: #6E7681"> </span>parted<span style="color: #6E7681"> </span><span style="color: #79C0FF">$HOME</span>/.dockerpi/filesystem.img<span style="color: #6E7681"> </span>--script<span style="color: #6E7681"> </span><span style="color: #A5D6FF">"mkpart primary ext2 ${</span><span style="color: #79C0FF">startsector</span><span style="color: #A5D6FF">}s -1s"</span>
+</code></pre></div>
+<p>Now restart the container. Reminder that this container will automatically launch a shell inside the pi image.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>podman<span style="color: #6E7681"> </span>run<span style="color: #6E7681"> </span>-it<span style="color: #6E7681"> </span>-v<span style="color: #6E7681"> </span><span style="color: #79C0FF">$HOME</span>/.dockerpi:/sdcard:Z<span style="color: #6E7681"> </span>lukechilds/dockerpi<span style="color: #6E7681"> </span>pi3<span style="color: #6E7681"> </span>-u<span style="color: #6E7681"> </span><span style="color: #A5D6FF">200</span>
+</code></pre></div>
+<p>When you are back inside the pi's shell, identify the device to resize. This may be similar to the MBR name. In the example below, the boot partition was <code>mmcblk0p1</code> and the partition we should resize is <code>mmcblk0p2</code>.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>sudo<span style="color: #6E7681"> </span>fdisk<span style="color: #6E7681"> </span>-l
+<span style="color: #6E7681">    </span>Device<span style="color: #6E7681">         </span>Boot<span style="color: #6E7681">  </span>Start<span style="color: #6E7681">      </span>End<span style="color: #6E7681">  </span>Sectors<span style="color: #6E7681">  </span>Size<span style="color: #6E7681"> </span>Id<span style="color: #6E7681"> </span>Type
+<span style="color: #6E7681">    </span>/dev/mmcblk0p1<span style="color: #6E7681">        </span><span style="color: #A5D6FF">8192</span><span style="color: #6E7681">   </span><span style="color: #A5D6FF">532479</span><span style="color: #6E7681">   </span><span style="color: #A5D6FF">524288</span><span style="color: #6E7681">  </span>256M<span style="color: #6E7681">  </span>c<span style="color: #6E7681"> </span>W95<span style="color: #6E7681"> </span>FAT32<span style="color: #6E7681"> </span><span style="color: #FF7B72; font-weight: bold">(</span>LBA<span style="color: #FF7B72; font-weight: bold">)</span>
+<span style="color: #6E7681">    </span>/dev/mmcblk0p2<span style="color: #6E7681">      </span><span style="color: #A5D6FF">532480</span><span style="color: #6E7681"> </span><span style="color: #A5D6FF">20971519</span><span style="color: #6E7681"> </span><span style="color: #A5D6FF">20439040</span><span style="color: #6E7681">  </span><span style="color: #A5D6FF">9</span>.8G<span style="color: #6E7681"> </span><span style="color: #A5D6FF">83</span><span style="color: #6E7681"> </span>Linux
+</code></pre></div>
+<p>Resize the partition to the new size given to <code>qemu</code> earlier. </p>
+<blockquote>
+<p>Note that the following example, the author only gave it <code>6G</code> of the full <code>10G</code>, but this is not recommended.</p>
+</blockquote>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>sudo<span style="color: #6E7681"> </span>resize2fs<span style="color: #6E7681"> </span>/dev/mmcblk0p2<span style="color: #6E7681"> </span>6G
+</code></pre></div>
+<p>Confirm that your file-system can see the new memory.
+</p><div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>dh<span style="color: #6E7681"> </span>-f
+<span style="color: #6E7681">    </span>Filesystem<span style="color: #6E7681">      </span>Size<span style="color: #6E7681">  </span>Used<span style="color: #6E7681"> </span>Avail<span style="color: #6E7681"> </span>Use%<span style="color: #6E7681"> </span>Mounted<span style="color: #6E7681"> </span>on
+<span style="color: #6E7681">    </span>/dev/root<span style="color: #6E7681">       </span><span style="color: #A5D6FF">5</span>.9G<span style="color: #6E7681">  </span><span style="color: #A5D6FF">2</span>.7G<span style="color: #6E7681">  </span><span style="color: #A5D6FF">3</span>.0G<span style="color: #6E7681">  </span><span style="color: #A5D6FF">47</span>%<span style="color: #6E7681"> </span>/
+</code></pre></div><p></p>
+<p>This concludes the resizing steps.</p>
+<blockquote>
+<p>Further reading <a href="https://stackoverflow.com/questions/68101936/how-to-increase-the-size-of-dev-root-on-a-docker-image-on-a-raspberry-pi/68328492#68328492">https://stackoverflow.com/questions/68101936/how-to-increase-the-size-of-dev-root-on-a-docker-image-on-a-raspberry-pi/68328492#68328492</a></p>
+</blockquote>
+<h3 id="tool-chains">Tool chains<a class="headerlink" href="#tool-chains" title="Permanent link">#</a></h3>
+<p>In order to build anything, we need to have the right system packages installed.</p>
+<h4 id="system">System<a class="headerlink" href="#system" title="Permanent link">#</a></h4>
+<p>First we need to update our raspi OS package manager and system binaries before we run the commands to setup any necessary tool chains. While still inside the pi, run:</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>sudo<span style="color: #6E7681"> </span>apt<span style="color: #6E7681"> </span>get<span style="color: #6E7681"> </span>update
+sudo<span style="color: #6E7681"> </span>apt<span style="color: #6E7681"> </span>upgrade
+</code></pre></div>
+<p>Reboot the image. It's a good idea to install <code>git</code> once you log back into the pi.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>sudo<span style="color: #6E7681"> </span>apt<span style="color: #6E7681"> </span>get<span style="color: #6E7681"> </span>install<span style="color: #6E7681"> </span>git
+</code></pre></div>
+<h5 id="openssl"><code>OpenSSL</code><a class="headerlink" href="#openssl" title="Permanent link">#</a></h5>
+<p>We need AARCH64 libs for OpenSSL.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>sudo<span style="color: #6E7681"> </span>apt-get<span style="color: #6E7681"> </span>install<span style="color: #6E7681"> </span>-y<span style="color: #6E7681"> </span>openssl:armhf
+sudo<span style="color: #6E7681"> </span>apt-get<span style="color: #6E7681"> </span>install<span style="color: #6E7681"> </span>-y<span style="color: #6E7681"> </span>libssl-dev:armhf
+</code></pre></div>
+<p>This concludes the system setup.</p>
+<h4 id="rust">Rust<a class="headerlink" href="#rust" title="Permanent link">#</a></h4>
+<p>For ONB servers run this install script for ARM.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>curl<span style="color: #6E7681"> </span>--proto<span style="color: #6E7681"> </span><span style="color: #A5D6FF">'=https'</span><span style="color: #6E7681"> </span>--tlsv1.2<span style="color: #6E7681"> </span>-sSf<span style="color: #6E7681"> </span>https://sh.rustup.rs<span style="color: #6E7681"> </span><span style="color: #E6EDF3">|</span><span style="color: #6E7681"> </span>sh
+</code></pre></div>
+<p>Add <code>cargo</code> to user's environment.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code><span style="color: #E6EDF3">source</span><span style="color: #6E7681"> </span><span style="color: #79C0FF">$HOME</span>/.cargo/env
+</code></pre></div>
+<p>Confirm Rust is installed.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>rustc<span style="color: #6E7681"> </span>--version
+<span style="color: #6E7681">    </span>rustc<span style="color: #6E7681"> </span><span style="color: #A5D6FF">1</span>.91.0<span style="color: #6E7681"> </span><span style="color: #FF7B72; font-weight: bold">(</span>f8297e351<span style="color: #6E7681"> </span><span style="color: #A5D6FF">2025</span>-10-28<span style="color: #FF7B72; font-weight: bold">)</span>
+</code></pre></div>
+<p>With the tool-chains and dependencies installed, the server can be compiled with:</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>cargo<span style="color: #6E7681"> </span>build<span style="color: #6E7681"> </span>--release
+</code></pre></div>
+<h4 id="c">C++<a class="headerlink" href="#c" title="Permanent link">#</a></h4>
+<p>TODO</p>
+<h3 id="transferring-files">Transferring Files<a class="headerlink" href="#transferring-files" title="Permanent link">#</a></h3>
+<p>There are three layers composing this virtualization of pi3:
+1. The user's host machine running podman.
+2. Podman running the container.
+3. The container running the raspi image via qemu.</p>
+<h4 id="from-host-to-container">From Host To Container<a class="headerlink" href="#from-host-to-container" title="Permanent link">#</a></h4>
+<p>In order to share programs built within in the image back to the host, we need a way to access the file-system; this time as a local volume.</p>
+<p>In terminal of the <em>host</em> machine, identify the container to mount.
+</p><div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>podman<span style="color: #6E7681"> </span>ps
+<span style="color: #6E7681">    </span>CONTAINER<span style="color: #6E7681"> </span>ID<span style="color: #6E7681">  </span>IMAGE<span style="color: #6E7681">                                 </span>COMMAND<span style="color: #6E7681">     </span>CREATED<span style="color: #6E7681">      </span>STATUS<span style="color: #6E7681">      </span>PORTS<span style="color: #6E7681">       </span>NAMES
+<span style="color: #6E7681">    </span>2443e4c8876e<span style="color: #6E7681">  </span>docker.io/lukechilds/dockerpi:latest<span style="color: #6E7681">  </span>pi3<span style="color: #6E7681"> </span>-u<span style="color: #6E7681"> </span><span style="color: #A5D6FF">200</span><span style="color: #6E7681">  </span><span style="color: #A5D6FF">2</span><span style="color: #6E7681"> </span>hours<span style="color: #6E7681"> </span>ago<span style="color: #6E7681">  </span>Up<span style="color: #6E7681"> </span><span style="color: #A5D6FF">2</span><span style="color: #6E7681"> </span>hours<span style="color: #6E7681">              </span>loving_mccarthy
+</code></pre></div><p></p>
+<p>For convenience, define a variable to hold the path to the mounted volume.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code><span style="color: #79C0FF">mnt</span><span style="color: #FF7B72; font-weight: bold">=</span><span style="color: #FF7B72">$(</span>podman<span style="color: #6E7681"> </span>mount<span style="color: #6E7681"> </span>CONTAINERID<span style="color: #FF7B72">)</span>
+</code></pre></div>
+<blockquote>
+<p>If you get an error that podman must execute unshare first, run <code>podman unshare</code> and try again.</p>
+</blockquote>
+<p>Now we can treat this path as a native path in our host machine's terminal. For example:</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>cp<span style="color: #6E7681"> </span>-R<span style="color: #6E7681"> </span><span style="color: #A5D6FF">${</span><span style="color: #79C0FF">mnt</span><span style="color: #A5D6FF">}</span>/etc/foobar<span style="color: #6E7681"> </span>/tmp
+</code></pre></div>
+<p>This command will copy <code>/etc/foobar</code> in the container's file-system to host's <code>/tmp</code> directory.</p>
+<p>Whenever you're done, <code>umount</code> the volume.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>podman<span style="color: #6E7681"> </span>umount<span style="color: #6E7681"> </span>CONTAINERID
+</code></pre></div>
+<p>Use podman to restart the container or <code>sudo reboot</code> if you have a session within the container. Once more, start up the container.</p>
+<p>Next, we want to <code>wget</code> our files over the virtual network device and we need to determine what our container IP address is for the pi image.</p>
+<p>Run <code>podman ps</code> to find the name of the container we want to enter via <code>sh</code>.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>podman<span style="color: #6E7681"> </span>ps
+<span style="color: #6E7681">    </span>CONTAINER<span style="color: #6E7681"> </span>ID<span style="color: #6E7681">  </span>IMAGE<span style="color: #6E7681">                                 </span>COMMAND<span style="color: #6E7681">     </span>CREATED<span style="color: #6E7681">       </span>STATUS<span style="color: #6E7681">       </span>PORTS<span style="color: #6E7681">       </span>NAMES
+<span style="color: #6E7681">    </span>bd151c72b97a<span style="color: #6E7681">  </span>docker.io/lukechilds/dockerpi:latest<span style="color: #6E7681">  </span>pi3<span style="color: #6E7681"> </span>-u<span style="color: #6E7681"> </span><span style="color: #A5D6FF">200</span><span style="color: #6E7681">  </span><span style="color: #A5D6FF">11</span><span style="color: #6E7681"> </span>hours<span style="color: #6E7681"> </span>ago<span style="color: #6E7681">  </span>Up<span style="color: #6E7681"> </span><span style="color: #A5D6FF">11</span><span style="color: #6E7681"> </span>hours<span style="color: #6E7681">              </span>jovial_murdock
+</code></pre></div>
+<p>In this example, the name is <code>jovial_murdock</code>.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>podman<span style="color: #6E7681"> </span><span style="color: #E6EDF3">exec</span><span style="color: #6E7681"> </span>-it<span style="color: #6E7681"> </span>jovial_murdock<span style="color: #6E7681"> </span>/bin/sh
+</code></pre></div>
+<p>Finally run <code>ifconfig</code> to see how the container identifies itself to the qemu image.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>wlp2s0<span style="color: #6E7681">    </span>Link<span style="color: #6E7681"> </span>encap:Ethernet<span style="color: #6E7681">  </span>HWaddr<span style="color: #6E7681"> </span>A6:F6:04:6F:1E:6A<span style="color: #6E7681">  </span>
+<span style="color: #6E7681">          </span>inet<span style="color: #6E7681"> </span>addr:192.168.0.110<span style="color: #6E7681">  </span>Bcast:192.168.0.255<span style="color: #6E7681">  </span>Mask:255.255.255.0
+</code></pre></div>
+<h4 id="container-to-image">Container To Image<a class="headerlink" href="#container-to-image" title="Permanent link">#</a></h4>
+<p>Because we equipped <code>qemu</code> with a network device earlier, back inside the raspberry image, we can use <code>wget</code> on the IP address to download the file in the container.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>wget<span style="color: #6E7681"> </span><span style="color: #A5D6FF">192</span>.168.0.110/&lt;FILE&gt;
+</code></pre></div>
+<h4 id="image-to-container">Image To Container<a class="headerlink" href="#image-to-container" title="Permanent link">#</a></h4>
+<p>If we ever need to perform the reverse operation - that is, exporting files from within our qemu image back into the container - we use <code>curl</code> to <em>upload</em>  files over the network to the container's <code>ftp</code> server.</p>
+<blockquote>
+<p>If the pi image had <code>ftpd</code> installed we could have used <code>curl</code> for downloading files too, but I didn't know that at the time of writing this tutorial.</p>
+</blockquote>
+<p>In the container, bind a tcp socket and run <code>ftpd</code> on it exposing the <code>/sdcard</code> path we used earlier.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>tcpsvd<span style="color: #6E7681"> </span>-vE<span style="color: #6E7681"> </span><span style="color: #A5D6FF">0</span>.0.0.0<span style="color: #6E7681"> </span><span style="color: #A5D6FF">21</span><span style="color: #6E7681"> </span>ftpd<span style="color: #6E7681"> </span>-w<span style="color: #6E7681"> </span>-A<span style="color: #6E7681"> </span>/sdcard
+</code></pre></div>
+<p>Back in the pi shell, <code>curl -T</code> to the IP we identified earlier in order to send the file. Note that we explicitly use the <code>:21</code> port for both the tcp service and the curl commands.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code>curl<span style="color: #6E7681"> </span>-T<span style="color: #6E7681"> </span>/&lt;FILE&gt;<span style="color: #6E7681"> </span>ftp://192.168.0.110:21
+</code></pre></div>
+<blockquote>
+<p>Be sure that <code>&lt;FILE&gt;</code> is the absolute path to the file you wish to upload.</p>
+</blockquote>
+<p>When the transfer(s) is/are complete, you can terminate the <code>tcpsvd</code> process.</p>
+<h4 id="container-to-host">Container To Host<a class="headerlink" href="#container-to-host" title="Permanent link">#</a></h4>
+<p>Because we mounted the container volume earlier in this tutorial, our work is now trivial. We can easily fetch that output file from our host machine. This was shown in the very first steps of this section. For convenience, another example is provided.</p>
+<div class="highlight" style="background: #0d1117"><pre style="line-height: 125%;"><span></span><code><span style="color: #6E7681"> </span>cp<span style="color: #6E7681"> </span>.dockerpi/&lt;FILE&gt;<span style="color: #6E7681"> </span>~/Desktop/
+</code></pre></div>
+</section>
+
+<section id="mkdocs-terminal-after-content">
+    
+</section>
+
+            </main>
+        </div>
+        <hr><a href="https://bsky.app/profile/opennetbattle.bsky.social">BlueSky</a> | <a href="https://gamejolt.com/games/OpenNetBattle/509302">GameJolt</a> | <a href="https://docs.google.com/document/d/1aUvNsD4oN5JkAHg1HeivZs1uEvSHYrcKO4J8Xdl8X6g/edit?usp=sharing">Real PET</a> | <a href="https://x.com/OpenNetBattle">X</a>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+
+
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body></html>
