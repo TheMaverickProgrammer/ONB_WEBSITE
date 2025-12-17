@@ -30,6 +30,6 @@ dropped directly into an ONB server with minimal integration.
 
 1. [IndianaJson](https://indianajson.github.io/open-assets/)
 
-[LUA]: (https://www.lua.org/start.html)
-[ONB_DOCS_2_1]: (https://alrysc.github.io/onb_docs/)
-[ONB_DOCS_2_0]: (https://paintylux.github.io/OpenNetBattleDocs/#introduction)
+[LUA]: https://www.lua.org/start.html
+[ONB_DOCS_2_1]: https://alrysc.github.io/onb_docs/
+[ONB_DOCS_2_0]: https://paintylux.github.io/OpenNetBattleDocs/#introduction
